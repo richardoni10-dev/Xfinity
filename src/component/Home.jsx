@@ -88,7 +88,7 @@ const PasswordPage = ({ email, onBack }) => {
   const [keepSignedIn, setKeepSignedIn] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
      try {
     const response = await fetch("/api/login", {
