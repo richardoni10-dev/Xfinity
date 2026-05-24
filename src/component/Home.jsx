@@ -106,13 +106,13 @@ const PasswordPage = ({ email, onBack }) => {
     const data = await response.json();
 
     console.log("Sent successfully:", data);
-
+   console.log('Signing in with password for:', email);
+  
   } catch (error) {
     console.error("Error sending data:", error);
   }
 };
-    console.log('Signing in with password for:', email);
-  };
+
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-start pt-16 px-4 font-sans">
